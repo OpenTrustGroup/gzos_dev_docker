@@ -1,0 +1,14 @@
+version: '3'
+services:
+  gzos_dev:
+    build: gzos/
+    ports:
+      - "10022:22"
+    volumes:
+      - user-home:/home/user
+      - ./configs/ssh:/home/user/.ssh
+      - ./configs/sshd_config:/etc/ssh/sshd_config
+      - ./configs/netrc:/home/user/.netrc
+
+volumes:
+  user-home:
