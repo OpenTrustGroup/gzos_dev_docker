@@ -1,7 +1,0 @@
-== How To Use ==
-
-- cd /devel
-- git clone https://github.com/OpenTrustGroup/gzos_dev_docker.git
-- cd gzos_dev_docker
-- docker-compose up -d
-
